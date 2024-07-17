@@ -1,0 +1,16 @@
+{
+  "name": "rss-worker",
+  "scripts": {
+    "dev": "wrangler dev src/index.tsx",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "hono": "^4.4.12"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "@types/cheerio": "^0.22.35",
+    "wrangler": "^3.57.2"
+  }
+}
